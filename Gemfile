@@ -81,3 +81,5 @@ group :test do
 end
 
 gem "dockerfile-rails", ">= 1.3", :group => :development
+
+gem "geocoder"
