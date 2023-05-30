@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   # get "workouts/new", to: "workouts#new"
   Rails.application.routes.draw do
-    resources :workouts, only: [:new, :create]
+    resources :workouts, only: %i[new create edit update destroy]
   end
 
 end
