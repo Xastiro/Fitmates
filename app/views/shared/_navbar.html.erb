@@ -2,37 +2,42 @@
   <div class="container-fluid">
 
     <%# MAP %>
-    <%= link_to "" do  %>
+    <%= link_to "", class: "text-decoration-none" do  %>
       <div class="d-flex align-items-center flex-column <%= 'active' if controller_name == 'bets' && action_name != 'new' && action_name != 'published' %>">
         <%= show_svg('map-icon.svg') %>
+        <p>Find</p>
       </div>
     <% end %>
 
     <%# ADD %>
-    <%= link_to "" do  %>
+    <%= link_to "", class: "text-decoration-none" do  %>
       <div class="d-flex align-items-center flex-column <%= 'active' if controller_name == 'pages' && action_name == 'workinprogress' %>">
         <%= show_svg('circle-plus-icon.svg') %>
+        <p>Add</p>
       </div>
     <% end %>
 
     <%# WORKOUTS %>
-    <%= link_to user_signed_in? ? "" : "", class: "link-to-publish" do  %>
+    <%= link_to user_signed_in? ? "" : "", class: "text-decoration-none" do  %>
       <div class="d-flex align-items-center flex-column <%= 'active' if controller_name == 'users' && action_name == 'index' %>" >
         <%= show_svg('star-icon.svg') %>
+        <p>Workouts</p>
       </div>
     <% end %>
 
     <%# PROFILE %>
-    <%= link_to "" do  %>
+    <%= link_to "", class: "text-decoration-none" do  %>
       <div class="d-flex align-items-center flex-column <%= 'active' if controller_name == 'users' && action_name == 'index' %>" >
         <%= show_svg('profile-icon.svg') %>
+        <p>Profile</p>
       </div>
     <% end %>
 
     <%# FRIENDS %>
-    <%= link_to "" do  %>
+    <%= link_to "", class: "text-decoration-none" do  %>
       <div class="d-flex align-items-center flex-column <%= 'active' if controller_name == 'bets' && action_name == 'published' || controller_name == 'bettings' && action_name == 'index'%>">
         <%= show_svg('chat-icon.svg') %>
+        <p>Friends</p>
       </div>
     <% end %>
 
