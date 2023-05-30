@@ -1,0 +1,12 @@
+<%= simple_form_for(@workout) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :event_date %>
+  <%= f.input :start_time %>
+  <%= f.input :end_time %>
+  <%= f.input :location %>
+  <%= f.input :recurring %>
+  <%# <%= f.input :type %>
+  <%# <%= f.input :tag %>
+  <%= f.input :description %>
+  <%= f.submit %>
+<% end %>

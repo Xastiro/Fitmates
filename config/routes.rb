@@ -9,4 +9,9 @@ Rails.application.routes.draw do
 
   get 'home', to: 'pages#home'
 
+  # get "workouts/new", to: "workouts#new"
+  Rails.application.routes.draw do
+    resources :workouts, only: [:new, :create]
+  end
+
 end

@@ -10,7 +10,7 @@
     <% end %>
 
     <%# ADD %>
-    <%= link_to "", class: "text-decoration-none" do  %>
+    <%= link_to new_workout_path, class: "text-decoration-none" do  %>
       <div class="d-flex align-items-center flex-column <%= 'active' if controller_name == 'pages' && action_name == 'workinprogress' %>">
         <%= show_svg('circle-plus-icon.svg') %>
         <p>Add</p>
