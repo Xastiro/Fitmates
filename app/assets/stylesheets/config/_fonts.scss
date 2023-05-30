@@ -15,6 +15,11 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 // }
 // $my-font: "Font Name";
 @font-face {
+  font-family: 'AvenirNext';
+  src: furl('AvenirNextLTPro-Regular.otf') format('otf');
+}
+
+@font-face {
   font-family: 'Trade Gothic LT Bold';
-  src: url('Trade Gothic LT Bold.ttf');
+  src: url('Trade Gothic LT Bold.ttf') format('ttf');
 }

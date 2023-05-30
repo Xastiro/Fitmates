@@ -23,5 +23,9 @@ module Fitmates
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Add custom fonts to assets
+    config.assets.paths << Rails.root.join("assets", "fonts")
+
   end
 end

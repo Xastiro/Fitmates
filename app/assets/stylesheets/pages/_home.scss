@@ -1,11 +1,49 @@
 // Specific CSS for your home-page
+@font-face {
+  font-family: 'AvenirNext';
+  src: furl('AvenirNextLTPro-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Trade Gothic LT Bold';
+  src: url('Trade Gothic LT Bold.ttf') format('ttf');
+}
+
+body, html {
+  height: 100%;
+}
+
+.home-background {
+  background-image: url("https://res.cloudinary.com/dk8s0evvo/image/upload/v1684815990/Fitmates/tim-mossholder-MiZVYi5m_cY-unsplash_obekdp.jpg");
+  height: 100%;
+  background-position: 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .home-title {
   background: linear-gradient(90deg, #D0F44F 0%, #4DDCC3 100%);
-  box-shadow: 0px 10px 20px 0px #00000040;
-  font-family: TradeGothic LT Bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  font-family: "TradeGothic LT Bold";
+  font-style: normal;
   font-size: 48px;
   font-weight: 700;
   line-height: 58px;
   letter-spacing: 1px;
   text-align: center;
+}
+
+.home-subtitle {
+  font-family: "AvenirNext";
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-shadow: 3px 10px 20px rgba(0, 0, 0, 0.5);
 }
