@@ -1,3 +1,10 @@
+<div class="container-fluid d-flex screen-header">
+  <h2>ADD WORKOUT</h2>
+  <%= link_to :back, class: "text-decoration-none" do  %>
+    <%= show_svg('exit-button.svg') %>
+  <% end %>
+</div>
+
 <%= simple_form_for(@workout) do |f| %>
   <%= f.input :title %>
   <%= f.input :event_date %>
