@@ -1,0 +1,97 @@
+.workout-form {
+
+  .input-field {
+    background-color: #F4F3F1;
+
+    border-radius: 10px;
+    border-color: white;
+  }
+  // See _location_autocompete.scss for Auto location box effects
+
+  .button-confirm {
+    /* Button */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    // padding: 5px 20px;
+    gap: 10px;
+
+    width: 92px;
+    height: 29px;
+
+    /* lime green */
+    background: #BAE165;
+
+    /* 02 dp elevation */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    /* Body */
+    font-family: 'AvenirNext';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Granite */
+    color: #2B2B2C;
+  }
+
+  .button-cancel {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px 20px;
+    gap: 10px;
+
+    width: 84px;
+    height: 29px;
+
+    /* Granite - lighter 2 */
+    border: 1px solid #A6A4A4;
+    border-radius: 20px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    /* Body */
+    font-family: 'AvenirNext';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Granite - lighter 2 */
+    color: #A6A4A4;
+  }
+
+
+  .title {
+    /* Event title */
+
+
+    /* Body */
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* Granite */
+    color: #2B2B2C;
+  }
+}

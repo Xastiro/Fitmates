@@ -5,15 +5,18 @@
   <% end %>
 </div>
 
-<%= simple_form_for(@workout) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :event_date %>
-  <%= f.input :start_time %>
-  <%= f.input :end_time %>
-  <%= f.input :location, input_html: {data: {location_autocomplete_target: "location"}, class: "d-none"}, wrapper_html: {data: {controller: "location-autocomplete", location_autocomplete_api_key_value: ENV["MAPBOX_API_KEY"]}} %>
+<%= simple_form_for @workout , html: { class: 'workout-form p-4' } do |f| %>
+  <%= f.input :title, input_html: { class: 'input-field' } %>
+  <%= f.input :event_date, input_html: { class: 'input-field' } %>
+  <%= f.input :start_time, input_html: { class: 'input-field' } %>
+  <%= f.input :end_time, input_html: { class: 'input-field' } %>
+  <%= f.input :location, input_html: {class: 'input-field', data: {location_autocomplete_target: "location"}, class: "d-none"}, wrapper_html: {data: {controller: "location-autocomplete", location_autocomplete_api_key_value: ENV["MAPBOX_API_KEY"]}} %>
   <%= f.input :recurring %>
   <%# <%= f.input :type %>
   <%# <%= f.input :tag %>
-  <%= f.input :description %>
-  <%= f.submit %>
+  <%= f.input :description, input_html: { class: 'input-field' } %>
+  <div class="d-flex justify-content-evenly">
+    <%= f.submit "Confirm", class: "button-confirm"  %>
+    <%= link_to "Cancel", :back, class: "button-cancel text-decoration-none" %>
+  </div>
 <% end %>
