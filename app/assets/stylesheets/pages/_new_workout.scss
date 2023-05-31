@@ -12,11 +12,11 @@
     /* Button */
 
     /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    // padding: 5px 20px;
-    gap: 10px;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: flex-start;
+    // padding: auto;
+    // gap: 10px;
 
     width: 92px;
     height: 29px;
@@ -29,9 +29,9 @@
     border-radius: 20px;
 
     /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    // flex: none;
+    // order: 0;
+    // flex-grow: 0;
 
     /* Body */
     font-family: 'AvenirNext';
@@ -49,11 +49,11 @@
     box-sizing: border-box;
 
     /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 5px 20px;
-    gap: 10px;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: flex-start;
+    // padding: auto;
+    // gap: 10px;
 
     width: 84px;
     height: 29px;
@@ -62,21 +62,25 @@
     border: 1px solid #A6A4A4;
     border-radius: 20px;
 
+
     /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    // flex: none;
+    // order: 1;
+    // flex-grow: 0;
+    // padding: auto;
 
     /* Body */
     font-family: 'AvenirNext';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 26px;
     text-align: center;
 
     /* Granite - lighter 2 */
     color: #A6A4A4;
+
+
   }
 
 
