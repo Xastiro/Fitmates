@@ -6,9 +6,14 @@ class WorkoutsController < ApplicationController
 
   def create
     @workout = Workout.new(workout_params)
-    @workout.save
+    @workout.user = current_user
 
-    redirect_to home_path
+    if @workout.save
+      redirect_to home_path
+    else
+
+      render :new, status: :unprocessable_entity
+    end
   end
 
   # def update
