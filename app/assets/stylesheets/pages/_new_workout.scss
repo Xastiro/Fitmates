@@ -2,9 +2,9 @@
 
   .input-field {
     background-color: #F4F3F1;
-
     border-radius: 10px;
     border-color: white;
+    height: 44px;
   }
   // See _location_autocompete.scss for Auto location box effects
 
@@ -103,16 +103,13 @@
   .svg-overlay-wrap {
     position: relative;
     display: inline-block; /* <= shrinks container to image size */
-    transition: transform 150ms ease-in-out;
   }
 
   .svg-overlay-wrap svg {
+    pointer-events: none;
     position: absolute;
-    top: 38px;
-    left: 134px;
+    top: 41px;
+    left: 121px;
   }
 
-  .svg-overlay-wrap:hover {
-    transform: rotate( 15deg );
-  }
 }
