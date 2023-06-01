@@ -98,4 +98,21 @@
     /* Granite */
     color: #2B2B2C;
   }
+
+
+  .svg-overlay-wrap {
+    position: relative;
+    display: inline-block; /* <= shrinks container to image size */
+    transition: transform 150ms ease-in-out;
+  }
+
+  .svg-overlay-wrap svg {
+    position: absolute;
+    top: 38px;
+    left: 134px;
+  }
+
+  .svg-overlay-wrap:hover {
+    transform: rotate( 15deg );
+  }
 }

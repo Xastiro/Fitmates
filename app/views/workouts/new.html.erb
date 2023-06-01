@@ -8,13 +8,9 @@
 <%= simple_form_for @workout , html: { class: 'workout-form p-4' } do |f| %>
   <%= f.input :title, label: 'Event title', input_html: { class: 'input-field', rows: 1 } %>
   <div class="d-flex justify-content-evenly">
-    <div class="row">
-      <div class="">
-        <%= f.input :event_date, label: 'Date', as: :string, input_html: { class: 'input-field', data: { controller: "flatpickr" } } %>
-      </div>
-      <div class="" style='position:absolute; margin-top:36px; margin-left:125px; pointer-events: none;'>
-        <%= show_svg('calendar.svg') %>
-      </div>
+    <div class="svg-overlay-wrap">
+      <%= f.input :event_date, label: 'Date', as: :string, input_html: { class: 'input-field', data: { controller: "flatpickr" } } %>
+      <%= show_svg('calendar.svg', style="margin-top=50px;") %>
     </div>
     <%= f.input :start_time, label: 'Time', input_html: { class: 'input-field' } %>
     <%= f.input :end_time, label: false, input_html: { class: 'input-field' } %>
