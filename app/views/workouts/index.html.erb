@@ -5,10 +5,28 @@
   <% end %>
 </div>
 
+<div>
+Search
+</div>
+
+<div>
+Joined Added Saved
+</div>
+
+<div>
+Upcoming workouts
+</div>
+
+<div>
+Past workouts
+</div>
+
+
 <div class="row">
   <% @workouts.each do |workout| %>
-    <%=  workout.title %>
-    <%= workout.event_date %>
+    <%= workout.title %>
+    <%= workout.event_date.strftime("%A, %d, %B, %Y") %>
+    <%# <%= workout.start_time.strftime("%M:%H%") %> 
     <%= link_to "Link", workout_path(workout.id) %>
   <% end %>
 </div>
