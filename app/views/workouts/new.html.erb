@@ -7,13 +7,14 @@
 
 <%= simple_form_for @workout , html: { class: 'workout-form p-4' }, data: { controller: "flatpickr" } do |f| %>
   <%= f.input :title, label: 'Event title', input_html: { class: 'input-field', rows: 1 } %>
-  <div class="d-flex justify-content-evenly">
-    <div class="svg-overlay-wrap">
+  <div class="row">
+    <div class="svg-overlay-wrap col-5">
       <%= f.input :event_date, label: 'Date', as: :string, input_html: { class: 'input-field', data: {flatpickr_target: "date"} } %>
       <%= show_svg('calendar.svg') %>
     </div>
-    <%= f.input :start_time, label: 'Time', as: :string, input_html: { class: 'input-field', data: {flatpickr_target: "startTime"} } %>
-    <%= f.input :end_time, label: false, as: :string, input_html: { class: 'input-field', data: {flatpickr_target: "endTime"} } %>
+    <%= f.input :start_time, label: 'Time', as: :string, input_html: { class: 'input-field', data: {flatpickr_target: "startTime"} }, wrapper_html: { class: "col-3" } %>
+    <p class= "col-1 py-0" style="margin-top: 40px;">to</p>
+    <%= f.input :end_time, label: false, as: :string, input_html: { class: 'input-field', data: {flatpickr_target: "endTime"} }, wrapper_html: { class: "col-3", style: "margin-top: 32px;" } %>
   </div>
   <%= f.input :location, input_html: {class: 'input-field', data: {location_autocomplete_target: "location"}, class: "d-none"}, wrapper_html: {data: {controller: "location-autocomplete", location_autocomplete_api_key_value: ENV["MAPBOX_API_KEY"]}} %>
   <%= f.input :recurring %>
