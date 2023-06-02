@@ -1,0 +1,14 @@
+<div class="container-fluid d-flex screen-header">
+  <h2>MY WORKOUTS</h2>
+  <%= link_to :back, class: "text-decoration-none" do  %>
+    <%= show_svg('exit-button.svg') %>
+  <% end %>
+</div>
+
+<div class="row">
+  <% @workouts.each do |workout| %>
+    <%=  workout.title %>
+    <%= workout.event_date %>
+    <%= link_to "Link", workout_path(workout.id) %>
+  <% end %>
+</div>
